@@ -1,5 +1,5 @@
-defmodule LifeMdWeb.Router do
-  use LifeMdWeb, :router
+defmodule LiveMdWeb.Router do
+  use LiveMdWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule LifeMdWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", LifeMdWeb do
+  scope "/", LiveMdWeb do
     pipe_through :browser
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", LifeMdWeb do
+  # scope "/api", LiveMdWeb do
   #   pipe_through :api
   # end
 end

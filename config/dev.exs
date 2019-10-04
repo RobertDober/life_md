@@ -6,8 +6,8 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :life_md, LifeMdWeb.Endpoint,
-  http: [port: 4000],
+config :live_md, LiveMdWeb.Endpoint,
+  http: [port: 4242],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -38,13 +38,13 @@ config :life_md, LifeMdWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :life_md, LifeMdWeb.Endpoint,
+config :live_md, LiveMdWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/life_md_web/{live,views}/.*(ex)$",
-      ~r"lib/life_md_web/templates/.*(eex)$"
+      ~r"lib/live_md_web/{live,views}/.*(ex)$",
+      ~r"lib/live_md_web/templates/.*(eex)$"
     ]
   ]
 

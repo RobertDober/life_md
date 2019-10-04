@@ -1,5 +1,5 @@
-defmodule LifeMdWeb.ErrorView do
-  use LifeMdWeb, :view
+defmodule LiveMdWeb.ErrorView do
+  use LiveMdWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

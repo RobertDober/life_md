@@ -8,11 +8,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :life_md, LifeMdWeb.Endpoint,
+config :live_md, LiveMdWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "jnx32cxMx/GDcg2SpVL1FJXu5W4OMXIga53tXH/Hg90zRix7YH3wLA0HK0sqJooN",
-  render_errors: [view: LifeMdWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LifeMd.PubSub, adapter: Phoenix.PubSub.PG2]
+  secret_key_base: "W78WFZEPNrhbjzVd0CDYquX38sgJ9cCchN0lIGWGEKDF4zyBFh4E0FR88ALWpJyf",
+  render_errors: [view: LiveMdWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: LiveMd.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

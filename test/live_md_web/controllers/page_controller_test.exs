@@ -1,5 +1,5 @@
-defmodule LifeMdWeb.PageControllerTest do
-  use LifeMdWeb.ConnCase
+defmodule LiveMdWeb.PageControllerTest do
+  use LiveMdWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

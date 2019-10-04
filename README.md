@@ -1,4 +1,4 @@
-# LifeMd
+# LiveMd
 
 To start your Phoenix server:
 

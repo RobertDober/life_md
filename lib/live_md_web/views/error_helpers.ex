@@ -1,4 +1,4 @@
-defmodule LifeMdWeb.ErrorHelpers do
+defmodule LiveMdWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -36,9 +36,9 @@ defmodule LifeMdWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(LifeMdWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(LiveMdWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(LifeMdWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(LiveMdWeb.Gettext, "errors", msg, opts)
     end
   end
 end

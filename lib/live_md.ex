@@ -1,6 +1,6 @@
-defmodule LifeMd do
+defmodule LiveMd do
   @moduledoc """
-  LifeMd keeps the contexts that define your domain
+  LiveMd keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

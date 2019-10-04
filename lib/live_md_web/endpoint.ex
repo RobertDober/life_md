@@ -1,7 +1,7 @@
-defmodule LifeMdWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :life_md
+defmodule LiveMdWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :live_md
 
-  socket "/socket", LifeMdWeb.UserSocket,
+  socket "/socket", LiveMdWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -11,7 +11,7 @@ defmodule LifeMdWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :life_md,
+    from: :live_md,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
@@ -39,8 +39,8 @@ defmodule LifeMdWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_life_md_key",
-    signing_salt: "F4GF2u8P"
+    key: "_live_md_key",
+    signing_salt: "h/Y93Aps"
 
-  plug LifeMdWeb.Router
+  plug LiveMdWeb.Router
 end
