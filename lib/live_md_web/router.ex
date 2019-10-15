@@ -16,7 +16,8 @@ defmodule LiveMdWeb.Router do
   scope "/", LiveMdWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", MarkdownController, :index
+    resources "/markdowns", MarkdownController, only: [:index, :show]
   end
 
   # Other scopes may use custom stacks.

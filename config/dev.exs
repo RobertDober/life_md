@@ -8,6 +8,7 @@ use Mix.Config
 # with webpack to recompile .js and .css sources.
 config :live_md, LiveMdWeb.Endpoint,
   http: [port: 4242],
+  url: [host: "0.0.0.0"],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -43,8 +44,10 @@ config :live_md, LiveMdWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/live_md_web/{live,views}/.*(ex)$",
-      ~r"lib/live_md_web/templates/.*(eex)$"
+      ~r"lib/live_md/.*(ex)$",
+      ~r"lib/live_md_web/{live,views, controllers}/.*(ex)$",
+      ~r"lib/live_md_web/templates/.*(eex)$",
+      ~r"mds/.*md$"
     ]
   ]
 

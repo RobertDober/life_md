@@ -12,7 +12,8 @@ config :live_md, LiveMdWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "W78WFZEPNrhbjzVd0CDYquX38sgJ9cCchN0lIGWGEKDF4zyBFh4E0FR88ALWpJyf",
   render_errors: [view: LiveMdWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LiveMd.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: LiveMd.PubSub, adapter: Phoenix.PubSub.PG2],
+  markdown_dir: "mds"
 
 # Configures Elixir's Logger
 config :logger, :console,
